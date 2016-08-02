@@ -480,9 +480,11 @@ caption{
 
 fieldset{
     width: 400px;
+    height: 1000px
     margin-left: 10px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .send{
@@ -496,7 +498,9 @@ fieldset{
 }
 
 .easy{
-    width: 600px;
+    width: 400px;
+    font-size: 0.8em;
+    text-align: center;
 }
 
 .send{
@@ -718,6 +722,11 @@ td{
 
 fieldset{
     width: 300px;
+    height: 800px
+}
+
+.easy{
+  width: 300px;
 }
 
 #first,
