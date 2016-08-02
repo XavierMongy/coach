@@ -1,0 +1,941 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+#body{
+    background-image: url('../img/girl.png');
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    display: none;
+}
+
+section{
+    height: 833px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    width: 100%;
+}
+
+.text-muted{
+    text-align: center;
+    width: 100%;
+}
+
+.menu{
+    height: 80px;
+    width: 100%;
+    background-color: #1F1F1F;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.inter{
+    width: 100%;
+}
+
+.menu ul li{
+    color: #C1CDC1;
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.selected{
+    color: #E6940E;
+}
+
+.containers{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    margin-left: 100px;
+    margin-top: 20px;
+    color: white;
+    font-size: 2.3em;
+}
+
+span{
+    color: #E6940E;
+}
+
+h3 span{
+    color: #E6940E;
+}
+
+.get{
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+    margin: 0;
+}
+
+h3 a:hover{
+    color: #E6940E;
+    text-decoration: none;
+}
+
+h4{
+    font-weight: bold;
+    margin-top: 30px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.connexion{
+    width: 240px;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.connected{
+    width: 220px;
+    height: 40px;
+    background-color: #E6940E;
+    border-radius: 5px;
+    border: 1px #C1CDC1 solid;
+    color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+label{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#name,
+#pass{
+    height: 40px;
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.sign-up{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.link-menu{
+    color: #A9A9A9;
+}
+
+.link-menu:hover{
+    color: #E6940E;
+    text-decoration: none;
+}
+
+.selected:hover{
+    color: #E6940E;
+    text-decoration: none;
+}
+
+
+
+/**********************************************************/
+/************************* MAIN **************************/
+/********************************************************/
+h2{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.program-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 470px;
+    height: 310px;
+}
+
+.training{
+    border: 1px grey solid;
+    border-radius: 3px;
+}
+
+.main-container{
+    display: flex;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    height: 320px;
+}
+
+
+.prices,
+.schedule{
+    width: 470px;
+    height: 150px;
+    background-color: #333333;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+}
+
+.prices-container{
+    height: 313px;
+}
+
+.prices{
+    padding-top: 20px;
+    margin-bottom: 14px;
+}
+
+.click{
+    margin-top: 15px;
+}
+
+article{
+    margin-top: 150px;
+    width: 100%;
+    height: 100px;
+    background-color: #E6940E;
+}
+
+.download{
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.android{
+    margin-top: 20px;
+}
+
+/**********************************************************/
+/*********************** FOOTER **************************/
+/********************************************************/
+
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: #333333;
+    margin-top: 50px;
+}
+
+hr{
+    color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.connect{
+    display: flex;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.container{
+    padding-top: 40px;
+    width: 580px;
+    height: 210px;
+    color: white;
+}
+
+.row{
+    margin-left: 30px;
+}
+
+.copy{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+a{
+    color: white;
+}
+
+.btp{
+    margin-left: 20px;
+}
+
+/*#########################################################*/
+/*********************** SCHEDULE*************************/
+/*#########################################################*/
+
+.month{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin-top: 80px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+tr{
+    text-align: right;
+}
+
+td{
+    border: 2px grey solid;
+    min-width: 80px;
+    height: 50px;
+    padding-right: 5px;
+}
+
+.available{
+    background-color: #77DD77;
+}
+
+.booked{
+    background-color: #C23B22;
+}
+
+.pending{
+    background-color: #FFCC33;
+}
+
+.none {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.green{
+    background-color: #77DD77;
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 40px;
+    height: 40px;
+    border: 1px grey solid;
+}
+
+.red{
+    background-color: #C23B22;
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 40px;
+    height: 40px;
+    border: 1px grey solid;
+}
+
+.yellow{
+    background-color: #FFCC33;
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 40px;
+    height: 40px;
+    border: 1px grey solid;
+}
+
+.both{
+    display: flex;
+}
+
+.colors{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+caption{
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.text{
+    padding-top: 10px;
+}
+
+#last,
+#first,
+#mail{
+    width: 400px;
+}
+
+#message{
+    width: 400px;
+    height: 200px;
+}
+
+fieldset{
+    width: 400px;
+    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.send{
+    width: 220px;
+    height: 40px;
+    background-color: #E6940E;
+    border-radius: 5px;
+    border: 1px #C1CDC1 solid;
+    color: white;
+    margin-top: 20px;
+}
+
+.easy{
+    width: 600px;
+}
+
+.send{
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+/*#########################################################*/
+/*********************** ABOUT *****************************/
+/*#########################################################*/
+
+#overlay{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 124%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#overlay img{
+    margin-top: 7%;
+    margin-left: 24%;
+}
+
+li{
+    list-style: none;
+}
+
+#imageGallery{
+    display: flex;
+    width: 960px;
+    height: 260px;
+    margin-right: 20px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333333;
+    border-radius: 4px;
+}
+
+.thumb{
+    margin-right: 40px;
+    border: 1px white solid;
+}
+
+.gym{
+    margin-top: 10px;
+    color: white;
+    text-align: left;
+}
+
+.who{
+    padding: 10px;
+    width: 950px;
+    height: 380px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: #333333;
+    border-radius: 4px;
+    font-size: 1.3em;
+}
+
+/*#########################################################*/
+/*********************** CONTACT **************************/
+/*#########################################################*/
+
+.follow{
+    width: 140px;
+    height: 180px;
+    text-align: justify;
+    color: white;
+    background-color: grey;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+.media{
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe{
+    display: block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.map{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 60px;
+    margin-top: 100px;
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/**********************************************************/
+/******************** MEDIA QUERIES **********************/
+/********************************************************/
+
+@media (max-width: 1200px){
+
+.august{
+    display: none;
+}
+}
+
+
+@media (max-width: 960px) {
+
+.main-container{
+    display: flex;
+    height: 650px;
+    width: 470px;
+    flex-wrap: wrap;
+}
+
+article{
+    display: none;
+}
+
+#imageGallery{
+    display: flex;
+    height: 500px;
+    width: 650px;
+    flex-wrap: wrap;
+}
+
+.who{
+    width: 650px;
+    height: 540px;
+}
+}
+
+@media (max-width: 900px){
+
+.containers{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+
+@media (max-width: 768px) {
+
+
+.containers{
+    display: none;
+}
+
+.navbar{
+    display: block;
+    height: 80px;
+    margin: 0;
+    border-bottom: 1px black solid;
+}
+
+nav{
+    display: none;
+}
+
+section{
+    margin: 0;
+}
+
+.container{
+    display: none;
+}
+
+hr{
+    display: none;
+}
+}
+
+
+@media (max-width: 650px){
+
+#imageGallery{
+    display: flex;
+    height: 850px;
+    width: 325px;
+    flex-wrap: wrap;
+}
+
+.colors{
+    width: 300px;
+}
+
+.who{
+    width: 350px;
+    height: 1100px;
+}
+
+.media{
+    width: 310px;
+}
+
+td{
+    min-width: 50px;
+    min-height: 40px;
+}
+
+fieldset{
+    width: 300px;
+}
+
+#first,
+#last,
+#mail,
+#message{
+    width: 300px;
+}
+
+.send{
+    margin-left: 40px;
+}
+
+iframe{
+    display: none;
+}
+
+.map{
+    display: none;
+}
+}
+
+
+@media (max-width: 470px) {
+
+.main-container{
+    width: 310px;
+    height: 1000px;
+    justify-content: center;
+}
+
+.prices,
+.schedule{
+    width: 310px;
+}
+
+.text{
+    display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
